@@ -51,7 +51,7 @@ export default {
           desc: '游乐园'
         },
         {
-          id: '0006',
+          id: '00026',
           imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png',
           desc: '必游榜单'
         },
