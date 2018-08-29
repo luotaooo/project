@@ -9,6 +9,7 @@
           <p class="icon-desc">{{item.desc}}</p>
         </div>
       </swiper-slide>
+      <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
   </div>
 </template>
@@ -22,7 +23,10 @@ export default {
   data () {
     return {
       swiperOption: {
-        autoplay: false
+        autoplay: false,
+        pagination: {
+          el: '.swiper-pagination'
+        }
       },
       iconList: [
         {
