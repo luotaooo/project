@@ -11,6 +11,7 @@
         </div>
       </li>
     </ul>
+    <a class="item-all" href="">查看更多产品</a>
   </div>
 </template>
 
@@ -22,6 +23,13 @@ export default {
       recommendList: [
         {
           id: '0001',
+          imgUrl: 'http://img1.qunarzz.com/sight/p0/1505/be/be4802e10f3b3107.water.jpg_200x200_0e98aabe.jpg',
+          title: '武隆天坑地缝国家地质公园',
+          desc: '武隆天坑地缝国家地质公园',
+          url: 'www.baidu.com'
+        },
+        {
+          id: '0002',
           imgUrl: 'http://img1.qunarzz.com/sight/p0/1505/be/be4802e10f3b3107.water.jpg_200x200_0e98aabe.jpg',
           title: '武隆天坑地缝国家地质公园',
           desc: '武隆天坑地缝国家地质公园',
@@ -40,9 +48,17 @@ export default {
     background-color #eee
     margin-top .2rem
     text-indent .2rem
+  .item-all
+    text-decoration none
+    display block
+    text-align center
+    padding .2rem 0
+    color #00afc7
   .item
     display flex
     height 1.9rem
+  .border-bottom
+    border-bottom 1px solid #eee
     .item-img
       width 1.7rem
       height 1.7rem
