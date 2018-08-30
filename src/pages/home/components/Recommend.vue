@@ -11,7 +11,7 @@
         </div>
       </li>
     </ul>
-    <a class="item-all" href="">查看更多产品1</a>
+    <a class="item-all" href="">查看更多产品</a>
   </div>
 </template>
 
