@@ -104,6 +104,11 @@ export default {
   .icons >>> .swiper-container
     height: 0
     padding-bottom: 50%
+  .icons >>> .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets
+    bottom 0
+  .icons >>> .swiper-pagination-bullet
+    width .12rem
+    height .12rem
   .icons
     margin-top: .1rem
     .icon

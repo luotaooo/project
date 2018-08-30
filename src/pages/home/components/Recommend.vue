@@ -11,6 +11,7 @@
         </div>
       </li>
     </ul>
+    <a class="item-app" href="">查看所有产品</a>
   </div>
 </template>
 
@@ -26,6 +27,13 @@ export default {
           title: '武隆天坑地缝国家地质公园',
           desc: '武隆天坑地缝国家地质公园',
           url: 'www.baidu.com'
+        },
+        {
+          id: '0002',
+          imgUrl: 'http://img1.qunarzz.com/sight/p0/201403/07/6457ef01e33f69234f30949a340f2f56.jpg_200x200_e14826a1.jpg',
+          title: '重庆海昌加勒比海水世界',
+          desc: '重庆海昌加勒比海水世界',
+          url: 'www.baidu.com'
         }
       ]
     }
@@ -40,9 +48,19 @@ export default {
     background-color #eee
     margin-top .2rem
     text-indent .2rem
+  .item-app
+    text-decoration none
+    display: block;
+    padding: .2rem 0;
+    color: #00afc7;
+    font-size: .28rem;
+    line-height: .4rem;
+    text-align: center;
   .item
     display flex
     height 1.9rem
+  .border-bottom
+    border-bottom 1px solid #eee
     .item-img
       width 1.7rem
       height 1.7rem
