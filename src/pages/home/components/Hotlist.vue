@@ -1,7 +1,7 @@
 <template>
   <div class="hot-bg">
     <div class="title">周末去哪儿</div>
-    <div class="hot-item" v-for="item of hotList" :key="item.id">
+    <div class="hot-item" v-for="item of list" :key="item.id">
       <div class="warp">
         <img class="hot-item-img" :src="item.imgUrl" alt="">
       </div>
@@ -23,23 +23,8 @@
 <script>
 export default {
   name: 'HomeHotlist',
-  data () {
-    return {
-      hotList: [
-        {
-          id: '0001',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/53/4bcd11cc3a5374.jpg_r_640x214_988a4cee.jpg',
-          title: '重庆必游TOP10',
-          desc: '重庆，非去不可'
-        },
-        {
-          id: '0002',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/5f/276ed6784d25ee.jpg_r_640x214_2193082e.jpg',
-          title: '重庆优质汤泉',
-          desc: '细数重庆那些最赞的温泉'
-        }
-      ]
-    }
+  props: {
+    list: Array
   }
 }
 </script>

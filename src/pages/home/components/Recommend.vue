@@ -2,12 +2,12 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src="item.imgUrl" alt="">
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
           <p class="item-desc">{{item.desc}}</p>
-          <a class="item-button" :href="item.url">查看详情</a>
+          <a class="item-button">查看详情</a>
         </div>
       </li>
     </ul>
@@ -18,25 +18,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [
-        {
-          id: '0001',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1505/be/be4802e10f3b3107.water.jpg_200x200_0e98aabe.jpg',
-          title: '武隆天坑地缝国家地质公园',
-          desc: '武隆天坑地缝国家地质公园',
-          url: 'www.baidu.com'
-        },
-        {
-          id: '0002',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201403/07/6457ef01e33f69234f30949a340f2f56.jpg_200x200_e14826a1.jpg',
-          title: '重庆海昌加勒比海水世界',
-          desc: '重庆海昌加勒比海水世界',
-          url: 'www.baidu.com'
-        }
-      ]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
