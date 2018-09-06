@@ -75,8 +75,6 @@ export default {
       background #eee
       padding-left .2rem
       color #666
-      /*border-top .02rem solid #ccc*/
-      /*border-bottom .02rem solid #ccc*/
     .button-list
       padding .1rem .6rem .1rem .1rem
       overflow hidden
