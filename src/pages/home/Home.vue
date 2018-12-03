@@ -3,7 +3,7 @@
     <home-header :city="city"></home-header>
     <home-swiper :list="swiperList"></home-swiper>
     <home-icons :icon="iconsList"></home-icons>
-    <home-recommend :list="recommendList"></home-recommend>
+    <home-recommend :list="recommend"></home-recommend>
     <home-hotlist :list="hotList"></home-hotlist>
     <home-footer></home-footer>
   </div>
@@ -32,7 +32,7 @@ export default {
       city: '',
       swiperList: [],
       iconsList: [],
-      recommendList: [],
+      recommend: [],
       hotList: []
     }
   },
@@ -49,7 +49,7 @@ export default {
         this.city = data.city
         this.swiperList = data.swiperList
         this.iconsList = data.iconList
-        this.recommendList = data.recommendList
+        this.recommend = data.recommendList
         this.hotList = data.weekendList
       }
     }

@@ -7,12 +7,6 @@
               <div class="button-wrapper">
                 <div class="button">北京</div>
               </div>
-              <div class="button-wrapper">
-                <div class="button">北京</div>
-              </div>
-              <div class="button-wrapper">
-              <div class="button">北京</div>
-            </div>
           </div>
         </div>
         <div class="area">
@@ -23,14 +17,12 @@
             </div>
           </div>
         </div>
-        <div class="cityArea">
-          <div class="area" v-for="(item,key) of list" :key="key">
+        <div class="area" v-for="(item,key) of list" :key="key">
             <div class="title">{{key}}</div>
             <div class="item-list" v-for="its of item" :key="its.id">
               <div class="item">{{its.name}}</div>
             </div>
           </div>
-        </div>
         </div>
     </div>
 </template>

@@ -3,7 +3,7 @@
     <city-header></city-header>
     <city-search></city-search>
     <city-list :list="cityList" :hot="hotCity"></city-list>
-    <city-alphabet></city-alphabet>
+    <city-alphabet :city="cityList"></city-alphabet>
   </div>
 </template>
 
@@ -24,7 +24,7 @@ export default {
   data () {
     return {
       hotCity: [],
-      cityList: []
+      cityList: {}
     }
   },
   methods: {
