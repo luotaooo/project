@@ -7,14 +7,14 @@ const path = require('path')
 module.exports = {
   dev: {
 
-    // Paths
+    // Paths 
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
       '/api' : {
         target: 'http://localhost:8080',
         pathRewrite: {
-          '^/api': '/static/mock'
+          '^/api': './static/mock'
         }
       }
     },
@@ -57,7 +57,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: './',
 
     /**
      * Source Maps
