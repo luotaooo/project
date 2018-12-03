@@ -1,6 +1,6 @@
 <template>
   <ul class="list">
-    <li class="item" v-for="(item,key) of city" :key="key">{{key}}</li>
+    <li class="item">A</li>
   </ul>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   name: 'CityHeader',
   props: {
-    city: Object
+    city: String
   }
 }
 </script>
