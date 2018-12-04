@@ -16,18 +16,17 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
   name: 'HomeHeader',
-  props: {
-    city: String
+  computed: {
+    ...mapState(['city'])
   }
 }
 </script>
 
 <style lang="stylus" scoped>
   @import '~styles/common.styl'
-  html {overflow-x: hidden;height: 100%;font-size: 50px;-webkit-tap-highlight-color: transparent;}
-  body {font-family: Arial, "Microsoft Yahei", "Helvetica Neue", Helvetica, sans-serif;color: #333;font-size: .28em;line-height: 1;-webkit-text-size-adjust: none;}
   .header
     display flex
     height .86rem
@@ -35,7 +34,7 @@ export default {
     color #fff
     flex-direction row
     align-items center
-    justify-content center
+    justify-content space-between
     position fixed
     width 100%
     z-index 11
@@ -49,12 +48,13 @@ export default {
     height .64rem
     background #fff
     border-radius .1rem
-    margin-left .2rem
     color #ccc
     line-height .64rem
     padding-left .2rem
+    margin-left .2rem
   .header-right
-    width 1.24rem
+    min-width 1.04rem
+    padding 0 .1rem
     float right
     color #fff
     text-align center
