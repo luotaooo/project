@@ -22,8 +22,8 @@
             <div class="item-list" v-for="its of item" :key="its.id">
               <div class="item">{{its.name}}</div>
             </div>
-          </div>
         </div>
+      </div>
     </div>
 </template>
 

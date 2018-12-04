@@ -1,11 +1,15 @@
 <template>
   <div>
     <home-header :city="city"></home-header>
-    <home-swiper :list="swiperList"></home-swiper>
-    <home-icons :icon="iconsList"></home-icons>
-    <home-recommend :list="recommend"></home-recommend>
-    <home-hotlist :list="hotList"></home-hotlist>
-    <home-footer></home-footer>
+    <div class="poo" ref="wrapper">
+      <div>
+        <home-swiper :list="swiperList"></home-swiper>
+        <home-icons :icon="iconsList"></home-icons>
+        <home-recommend :list="recommend"></home-recommend>
+        <home-hotlist :list="hotList"></home-hotlist>
+        <home-footer></home-footer>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -17,6 +21,7 @@ import HomeRecommend from './components/Recommend'
 import HomeHotlist from './components/Hotlist'
 import HomeFooter from './components/Footer'
 import axios from 'axios'
+import Bscroll from 'better-scroll'
 export default {
   name: 'Home',
   components: {
@@ -56,10 +61,17 @@ export default {
   },
   mounted () {
     this.getHomeInfo()
+    this.scroll = new Bscroll(this.$refs.wrapper)
   }
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="stylus">
+  .poo
+    position absolute
+    top .86rem
+    bottom 0
+    left 0
+    right 0
+    overflow hidden
 </style>

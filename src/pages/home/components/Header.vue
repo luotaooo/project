@@ -36,6 +36,9 @@ export default {
     flex-direction row
     align-items center
     justify-content center
+    position fixed
+    width 100%
+    z-index 11
   .header-left
     width .64rem
     float left
