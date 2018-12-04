@@ -67,6 +67,7 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+  @import "~styles/common.styl"
   .poo
     position absolute
     top .86rem
