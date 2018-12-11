@@ -1,15 +1,15 @@
 <template>
   <div class="header">
       <div class="header-left">
-        <span class="iconfont">&#xe729;</span>
+        <span class="iconfont">&#xe623;</span>
       </div>
       <div class="header-input">
-        <span class="iconfont">&#xe615;</span>  输入城市/景点/游玩主题
+        <span class="iconfont">&#xe60f;</span>  输入城市/景点/游玩主题
       </div>
       <router-link to="/city">
       <div class="header-right">
         {{this.city}}
-        <span class="iconfont arrow-icon">&#xe607;</span>
+        <span class="iconfont arrow-icon">&#xe61c;</span>
       </div>
       </router-link>
   </div>
