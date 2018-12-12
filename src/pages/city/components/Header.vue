@@ -2,7 +2,7 @@
   <div class="header">
     <router-link to="/">
       <div class="header-left">
-        <span class="iconfont">&#xe729;</span>
+        <span class="iconfont">&#xe623;</span>
       </div>
     </router-link>
     城市选择
@@ -20,8 +20,6 @@ export default {
 
 <style lang="stylus" scoped>
   @import '~styles/common.styl'
-  html {overflow-x: hidden;height: 100%;font-size: 50px;-webkit-tap-highlight-color: transparent;}
-  body {font-family: Arial, "Microsoft Yahei", "Helvetica Neue", Helvetica, sans-serif;color: #333;font-size: .28em;line-height: 1;-webkit-text-size-adjust: none;}
   .header
     overflow hidden
     height .86rem
