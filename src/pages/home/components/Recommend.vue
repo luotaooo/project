@@ -7,7 +7,7 @@
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
           <p class="item-desc">{{item.desc}}</p>
-          <a class="item-button">查看详情</a>
+          <span class="item-button">查看详情</span>
         </div>
       </router-link>
     </ul>
